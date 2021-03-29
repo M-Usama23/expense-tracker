@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  background-color: #fff;
+  max-width: 900px;
+  min-height: 450px;
+  /* margin: 0 auto; */
+  box-shadow: 0 0 10px gray;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px 50px;
+}
+.cl{
+  background-color: #fff;
+  box-shadow: 0 0 3px gray;
+  border-bottom: solid 2px rgb(201,200,201);
+  /* margin: 20px 0; */
+  padding:20px  ;
+  border-radius: 4px;
+
+}
+/* .money{
+  font-weight: 900;
+  margin: 0 8px;
+} */
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.money.plus {
+  color: #2ecc71;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.money.minus {
+  color: #c0392b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .plus{
+  color: rgb(67,112,100);
+}
+.minus{
+  color: rgb(162, 113, 110);
+} */
+.his{
+  border-bottom: solid 2px rgb(201,200,201);
+  margin: 20px 0;
+  /* padding-bottom: 15px; */
+  padding: 0 0 15px 0;
+}
+.box-plus{
+  background-color: rgb(255,255,255);
+  box-shadow: 0 0 2px gray;  
+  border-bottom: solid 2px rgb(201,200,201);
+  margin: 5px 0;
+  padding: 10px;
+  border-right: solid 3px #2ecc71;
+}
+.box-minus{
+  background-color: rgb(255,255,255);
+  box-shadow: 0 0 2px gray;  
+
+  border-bottom: solid 2px rgb(201,200,201);
+  margin: 5px 0;
+  padding: 10px;
+  border-right: solid 3px #c0392b;
+}
+/* .box-minus:hover{
+  background-color: rgb(162, 113, 110);
+}
+.box-plus:hover{
+  background-color:  #2ecc71;
+} */
+.form-label{
+  font-weight: bold;
+  margin: 10px 0;
+}
+.btn{
+  width: 100%;
+  margin: 15px 0;
+}
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 0; */
+  transform: translate(-100%, -50%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.list li:hover .delete-btn {
+  opacity: 1;
+  background-color: #e74c3c;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
