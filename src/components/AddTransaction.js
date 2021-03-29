@@ -6,7 +6,7 @@ export const AddTransaction = () => {
     let [description, setDescription] = useState();
     let [transaction, setTransaction] = useState();
 
-    let { transactions, addTransaction } = useContext(TransactionContext);
+    let { addTransaction } = useContext(TransactionContext);
 
 
     function TransactionAdd() {
