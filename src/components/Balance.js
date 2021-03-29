@@ -29,7 +29,7 @@ export const Balance = () => {
     return (
         <div className="row">
             <div className="col-sm-4">
-                <h4>Your Balance </h4>
+                <h4>Your Balance</h4>
                 <h1>${total}</h1>
             </div>
         </div>
